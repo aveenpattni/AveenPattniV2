@@ -1,30 +1,19 @@
 import React from 'react';
-import styled from "@emotion/styled";
-import units from "design-units";
 import Particles from "react-particles-js";
-
-const u = units;
-
-const HeroWrapper = styled.div`
-  height: 100vh;
-  width: 100%;
-  color: white;
-  position: relative;
-`;
-
-const HeroName = styled.h1`
-  position: absolute;
-  top: 40%;
-  right: 10%;
-  @media (min-width: 960px) {
-    right: 20%;
-  }
-  text-shadow: 2px 2px #666;
-  font-family: georgia;
-  ${u({
-    fontSize: "h1",
-  })}
-`;
+import { IconBubble } from "../../components/IconBubble";
+import linkedInIcon from "../../assets/icons/linkedin.svg"
+import emailIcon from "../../assets/icons/email.svg";
+import githubIcon from "../../assets/icons/github.svg";
+import twitterIcon from "../../assets/icons/twitter.svg";
+import {
+  HeroWrapper,
+  HeroContent,
+  HeroName,
+  HeroTitle,
+  TitleItem,
+  HeroQuote,
+  IconBubbles
+} from "./styles"
 
 export const HeroSection = () => {
   const particlesProps = {
@@ -46,11 +35,41 @@ export const HeroSection = () => {
       }
     }
   }
-
+  const iconList = [
+    {
+      icon: linkedInIcon, 
+      link: "https://www.linkedin.com/in/aveenpattni"
+    },
+    {
+      icon: twitterIcon, 
+      link: "https://twitter.com/aveenpattni"
+    },
+    {
+      icon: emailIcon, 
+      link: "mailto:aveenpattni@gmail.com"
+    },
+    {
+      icon: githubIcon, 
+      link: "https://github.com/aveenpattni"
+    }
+  ];
   return (
     <HeroWrapper>
       <Particles {...particlesProps} />
-      <HeroName>Aveen Pattni</HeroName>
+      <HeroContent>
+        <HeroName>Aveen Pattni</HeroName>
+        <IconBubbles>
+          {
+            iconList.map(item => <IconBubble {...item} />)
+          }
+        </IconBubbles>
+        <HeroTitle>
+          <TitleItem>Software Developer</TitleItem>
+          <TitleItem>Entrepreneur</TitleItem>
+          <TitleItem>Self-Proclaimed Athelete</TitleItem>
+        </HeroTitle>
+        <HeroQuote>The limit does not exist.</HeroQuote>
+      </HeroContent>
     </HeroWrapper>
   )
 }

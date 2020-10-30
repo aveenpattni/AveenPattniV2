@@ -12,8 +12,8 @@
     "react-particles-js": "^3.4.0"
   },
   "scripts": {
-    "bootstrap": "yarn && cd client && yarn && yarn run build",
-    "build": "cd client && yarn run build",
+    "bootstrap": "yarn && cd client && yarn && yarn run build && cd ..",
+    "build": "cd client && yarn run build && cd ..",
     "start": "nodemon ."
   },
   "proxy": "http://localhost:8000"

@@ -10,7 +10,7 @@ const ExperienceWrapper = styled.div`
 export const ExperienceSection = () => {
   return (
     <ExperienceWrapper>
-      Education
+      Experience
     </ExperienceWrapper>
   )
 }

@@ -1,9 +1,9 @@
-This project was created by Aveen Pattni to provide a template for express react apps.
-This template is formed with Styled Emotion components using design-units
+This project was created by Aveen Pattni as a version 2 Portfolio Site.
+This project is formed with Styled Emotion components using design-units.
 
 ## How to run app
 
-Clone to your machine. First run `yarn`. Then build with `yarn build`. Then start the app with `yarn start`.
+Clone to your machine. First run `yarn bootstrap`. Then start the app with `yarn start`.
 
 ## Available Scripts
 
@@ -20,6 +20,10 @@ To make edits to the react app, you will have to run the build.
 ### `yarn build`
 
 Will build the react app and store the built files in the `build` folder.
+
+### `yarn bootstrap`
+
+Will install all packages as well as build the react app and store the built files in the `build` folder.
 
 
 ## Editing React app
