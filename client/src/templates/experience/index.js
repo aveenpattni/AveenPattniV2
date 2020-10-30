@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled";
 import units from "design-units";
 
-const ExperienceWrapper = styled.div`
+const ExperienceWrapper = styled.section`
   width: 100%;
   color: white;
 `;

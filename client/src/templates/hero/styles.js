@@ -3,12 +3,15 @@ import units from "design-units";
 
 const u = units;
 
-export const HeroWrapper = styled.div`
+export const HeroWrapper = styled.section`
   height: 100vh;
   width: 100%;
-  color: white;
   position: relative;
   text-align: right;
+  ${u({
+    backgroundColor: "black",
+    color: "whiteText"
+  })};
 `;
 
 export const HeroContent = styled.div`
@@ -16,7 +19,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  top: 25%;
+  top: 17.5%;
   right: 10%;
   @media (min-width: 640px) {
     right: 20%;

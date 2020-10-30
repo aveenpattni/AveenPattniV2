@@ -18,7 +18,6 @@ const AppWrapper = styled.div`
   justify-content: center;
   align-items: center;
   ${u({
-    backgroundColor: "secondary"
   })};
 `
 

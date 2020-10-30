@@ -7,13 +7,21 @@ const font_sizes = {
   h5: "1.25rem",
   h6: "1rem",
   h7: "0.75rem",
+  p: "1.16rem"
 };
 //Define your standard line height here
-const line_heights = {};
+const line_heights = {
+  p: "1.5rem"
+};
 //Define your standard base colours here
 const base_colours = {
   primary: "#DDD",
-  secondary: "black"
+  secondary: "black",
+  black: "black",
+  white: "white",
+  whiteText: "#FAFAFA",
+  blackText: "#AFAFAF"
+  
 };
 
 export const theme = {
