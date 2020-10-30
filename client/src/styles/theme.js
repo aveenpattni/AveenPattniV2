@@ -1,5 +1,7 @@
 //Define your standard font sizes here
-const font_sizes = {};
+const font_sizes = {
+  h1: "3.5rem"
+};
 //Define your standard line height here
 const line_heights = {};
 //Define your standard base colours here
