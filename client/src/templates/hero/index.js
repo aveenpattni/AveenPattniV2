@@ -60,7 +60,7 @@ export const HeroSection = () => {
         <HeroName>Aveen Pattni</HeroName>
         <IconBubbles>
           {
-            iconList.map(item => <IconBubble {...item} />)
+            iconList.map(item => <IconBubble key={item.icon} {...item} />)
           }
         </IconBubbles>
         <HeroTitle>

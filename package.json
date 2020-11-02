@@ -9,7 +9,8 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.3",
     "path": "^0.12.7",
-    "react-particles-js": "^3.4.0"
+    "react-particles-js": "^3.4.0",
+    "react-slidedown": "^2.4.5"
   },
   "scripts": {
     "bootstrap": "yarn && cd client && yarn && yarn run build && cd ..",

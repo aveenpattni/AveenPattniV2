@@ -34,10 +34,10 @@ export const TextZone = styled.div`
     width: ["100%", "60%"]
   })}
 `;
-export const AboutHeader = styled.h3`
+export const AboutHeader = styled.h2`
   font-family: "Georgia";
   ${units({
-    fontSize: "h3",
+    fontSize: "h2",
     marginTop: [0, 4]
   })}
 `;

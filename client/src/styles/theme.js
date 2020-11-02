@@ -16,12 +16,13 @@ const line_heights = {
 //Define your standard base colours here
 const base_colours = {
   primary: "#DDD",
-  secondary: "black",
-  black: "black",
-  white: "white",
+  secondary: "#F0F0F0",
+  black: "#000000",
+  white: "#FFFFFF",
   whiteText: "#FAFAFA",
-  blackText: "#AFAFAF"
-  
+  blackText: "#0F0F0F",
+  grayText: "#787878",
+  link: "#0645AD"
 };
 
 export const theme = {
