@@ -1,6 +1,15 @@
 const messages = {
   experiences: [
     {
+      company: "Freshly Groomed",
+      titleDate: "CEO and Founder - (October 2020 - Present)",
+      description: [
+        "lorem ipsum",
+        "lorem ipsum2",
+        "lorem ipsum3"
+      ]
+    },
+    {
       company: "Walmart Labs",
       titleDate: "Software Developer - Marketing Technology (July 2020 - Present)",
       description: [

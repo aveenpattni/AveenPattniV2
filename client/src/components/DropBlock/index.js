@@ -4,7 +4,7 @@ import units from "design-units";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css"
 
-const DropBoxWrapper = styled.div`
+const DropBoxWrapper = styled.article`
   border: 1px solid black;
   ${units({
     width: "100%",

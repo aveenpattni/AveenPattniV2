@@ -53,7 +53,7 @@ export const HeroQuote = styled.h4`
   ${u({
     fontSize: ["h5", "h4"]
   })}
-  font-family: "Times New Roman";
+  font-family: "Arial";
   font-weight: 0;
   font-style: italic;
 `;

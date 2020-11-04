@@ -36,9 +36,9 @@ export const ExperienceSection = () => {
   return (
     <ExperienceWrapper>
       <ContentWrapper>
-        <ExpHeader>My Experience</ExpHeader>
+        <ExpHeader>Experience</ExpHeader>
         {messages.experiences.map(exp => <DropBlock key={exp.company} {...exp}/>)}
       </ContentWrapper>
     </ExperienceWrapper>
   )
-}
+};
