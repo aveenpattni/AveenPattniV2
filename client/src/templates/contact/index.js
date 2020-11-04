@@ -21,6 +21,7 @@ const ContentWrapper = styled.div`
   ${units({
     marginRight: [3, 4],
     marginLeft: [3, 4],
+    marginBottom: "24px",
     flexDirection: "column"
   })}
 `;

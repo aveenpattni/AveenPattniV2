@@ -1,5 +1,3 @@
-// import waterloo from "../"
-
 const messages = {
   degrees: [
     {

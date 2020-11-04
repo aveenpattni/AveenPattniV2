@@ -22,6 +22,12 @@ const IconBubbleWrapper = styled.a`
     height: 100%;
     width: 100%;
   }
+  :hover {
+    ${u({
+      height: ["30px", "38px"],
+      width: ["30px", "38px"],
+    })}
+  }
 `;
 
 export const IconBubble = ({icon, link}) => {

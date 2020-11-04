@@ -5,7 +5,7 @@ import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css"
 
 const DropBoxWrapper = styled.article`
-  border: 1px solid black;
+  border: 1px solid #F0F0F0;
   ${units({
     width: "100%",
     background: "white",
@@ -64,13 +64,38 @@ const ToggleSection = styled.a`
 const SlideDownStyled = styled(SlideDown)`
   transition-duration: 0.5s;
 `;
+const BlockTop = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+const BlockImage = styled.div`
+  display: flex;
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  img {
+    width: 90px;
+    height: 90px;
+  }
+`;
+const BlockText = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-export const DropBlock = ({company, titleDate, description}) => {
+export const DropBlock = ({company, titleDate, description, pic}) => {
   const [isOpen, toggleBlock] = useState(false)
   return (
     <DropBoxWrapper>
-      <BlockHeader>{company}</BlockHeader>
-      <BlockSubHeader>{titleDate}</BlockSubHeader>
+      <BlockTop>
+        <BlockText>
+          <BlockHeader>{company}</BlockHeader>
+          <BlockSubHeader>{titleDate}</BlockSubHeader>
+        </BlockText>
+        <BlockImage>
+          <img src={pic} alt={company}/>
+        </BlockImage>
+      </BlockTop>
       <SlideDownStyled className={'my-dropdown-slidedown'}>
         {isOpen? <BlockDescription>
           {description.map(line => <BlockLine key={line}>{line}</BlockLine>)}

@@ -4,13 +4,27 @@ import units from "design-units";
 
 const FooterWrapper = styled.section`
   width: 100%;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${units({
+    backgroundColor: "white",
+    height: "48px"
+  })}
+`;
+const FooterText = styled.h4`
+  margin: 0;
+  ${units({
+    fontSize: "h4"
+  })}
 `;
 
 export const FooterSection = () => {
   return (
     <FooterWrapper>
-      Footer
+      <FooterText>
+        An Aveen Pattni Production.
+      </FooterText>
     </FooterWrapper>
   )
 }

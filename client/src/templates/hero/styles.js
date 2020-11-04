@@ -60,4 +60,7 @@ export const HeroQuote = styled.h4`
 
 export const IconBubbles = styled.ul`
   display: flex;
+  ${units({
+    height: ["48px", "54px"],
+  })}
 `;

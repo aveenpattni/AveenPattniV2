@@ -20,6 +20,7 @@ const ContentWrapper = styled.div`
   ${units({
     marginRight: [3, 4],
     marginLeft: [3, 4],
+    marginBottom: "24px",
     flexDirection: "column"
   })}
 `;
@@ -48,6 +49,7 @@ const BlockSection = styled.div`
 `;
 const SubHeader = styled.h2`
   font-family: "Georgia";
+  text-decoration: underline;
   ${units({
     fontSize: "h4",
     marginTop: [2, 3]
