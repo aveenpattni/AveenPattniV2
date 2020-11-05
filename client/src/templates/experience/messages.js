@@ -6,9 +6,9 @@ const messages = {
       pic: "/freshlygroomed.png",
       description: [
         "Founder of Freshly Groomed, an E-commerce buisiness selling male grooming products.",
-        "Created business plan as well as custom private labels.",
+        "Launched Shopify store with custom designs and custom CSS.",
         "Work with multiple suppliers to manufacture products with quality and deliver in a timely manner.",
-        "Manage distribution of orders to ensure customers are receiving their orders with quality care and attention to detail.",
+        "Manage shipping and logistics team to ensure customers are receiving their orders with quality care and attention to detail.",
         "Manage customer service team to provide custimers support as they need, including general inquiries, issues with orders, order tracking, etc."
       ]
     },
