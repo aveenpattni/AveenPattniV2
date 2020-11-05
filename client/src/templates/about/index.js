@@ -14,10 +14,10 @@ import {
 
 export const AboutSection = () => {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
       <ContentWrapper>
         <PictureZone>
-          <img src={aveen} />
+          <img src={aveen} alt="Aveen Pattni"/>
         </PictureZone>
         <TextZone>
           <AboutHeader>About Aveen</AboutHeader>

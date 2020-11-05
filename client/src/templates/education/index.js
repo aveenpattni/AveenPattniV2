@@ -64,7 +64,7 @@ const SpaceBlock = styled.div`
 
 export const EducationSection = () => {
   return (
-    <EducationWrapper>
+    <EducationWrapper id="education">
       <ContentWrapper>
         <EducationHeader>Education</EducationHeader>
         <GridSection>

@@ -34,10 +34,10 @@ const ExpHeader = styled.h2`
 
 export const ExperienceSection = () => {
   return (
-    <ExperienceWrapper>
+    <ExperienceWrapper id="experienceSection">
       <ContentWrapper>
         <ExpHeader>Experience</ExpHeader>
-        {messages.experiences.map(exp => <DropBlock key={exp.company} {...exp}/>)}
+        {messages.experiences.map(exp => <DropBlock key={Math.random()} {...exp}/>)}
       </ContentWrapper>
     </ExperienceWrapper>
   )

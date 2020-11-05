@@ -19,7 +19,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  top: 17.5%;
+  top: 20%;
   right: 10%;
   @media (min-width: 640px) {
     right: 20%;

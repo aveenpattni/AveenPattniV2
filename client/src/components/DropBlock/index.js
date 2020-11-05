@@ -5,12 +5,18 @@ import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css"
 
 const DropBoxWrapper = styled.article`
-  border: 1px solid #F0F0F0;
   ${units({
     width: "100%",
-    background: "white",
+    backgroundColor: "white",
     marginBottom: [3, 4]
   })}
+  :hover {
+    ${units({
+      backgroundColor: "secondary"
+    })}
+    cursor: pointer;
+    transition: 0.4s;
+  }
 `;
 
 const BlockHeader = styled.h3`
@@ -42,24 +48,13 @@ const BlockSubHeader = styled.h4`
 `
 const BlockDescription = styled.ul`
   margin: 0;
+  padding-bottom: 8px;
   ${units({
     fontSize: "p"
   })}
 `;
 const BlockLine = styled.li`
-
-`;
-const ToggleSection = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: underline;
-  cursor: pointer;
-  ${units({
-    fontSize: "h6",
-    color: "link"
-  })}
-  width: auto;
+  margin-bottom: 4px;
 `;
 const SlideDownStyled = styled(SlideDown)`
   transition-duration: 0.5s;
@@ -73,6 +68,7 @@ const BlockImage = styled.div`
   width: 90px;
   height: 90px;
   align-self: center;
+  padding: 4px;
   img {
     width: 90px;
     height: 90px;
@@ -86,7 +82,7 @@ const BlockText = styled.div`
 export const DropBlock = ({company, titleDate, description, pic}) => {
   const [isOpen, toggleBlock] = useState(false)
   return (
-    <DropBoxWrapper>
+    <DropBoxWrapper onClick={() => toggleBlock(!isOpen)}>
       <BlockTop>
         <BlockText>
           <BlockHeader>{company}</BlockHeader>
@@ -101,7 +97,6 @@ export const DropBlock = ({company, titleDate, description, pic}) => {
           {description.map(line => <BlockLine key={line}>{line}</BlockLine>)}
         </BlockDescription> : null}
       </SlideDownStyled>
-      <ToggleSection onClick={() => toggleBlock(!isOpen)}>{isOpen? "Read Less": "Read More"}</ToggleSection>
     </DropBoxWrapper>
   )
 }

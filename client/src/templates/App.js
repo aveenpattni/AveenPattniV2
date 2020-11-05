@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import units from "design-units";
+import { StickyHeader } from "./Header"
 import { HeroSection } from "./hero";
 import { AboutSection } from "./about";
 import { ExperienceSection } from "./experience";
@@ -25,6 +26,7 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
+      <StickyHeader />
       <HeroSection />
       <AboutSection />
       <ExperienceSection />

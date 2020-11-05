@@ -9,6 +9,9 @@ export const SchoolBlockWrapper = styled.article`
     marginBottom: [2, 3],
     padding: [2, 3]
   })}
+  :hover {
+    cursor: pointer;
+  }
   ::before {
     content: '';
     width: 75px;

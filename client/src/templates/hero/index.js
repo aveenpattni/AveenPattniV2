@@ -1,10 +1,7 @@
 import React from 'react';
 import Particles from "react-particles-js";
 import { IconBubble } from "../../components/IconBubble";
-import linkedInIcon from "../../assets/icons/linkedin.svg"
-import emailIcon from "../../assets/icons/email.svg";
-import githubIcon from "../../assets/icons/github.svg";
-import twitterIcon from "../../assets/icons/twitter.svg";
+import { contactList } from "../contact/contacts";
 import {
   HeroWrapper,
   HeroContent,
@@ -35,38 +32,20 @@ export const HeroSection = () => {
       }
     }
   }
-  const iconList = [
-    {
-      icon: linkedInIcon, 
-      link: "https://www.linkedin.com/in/aveenpattni"
-    },
-    {
-      icon: twitterIcon, 
-      link: "https://twitter.com/aveenpattni"
-    },
-    {
-      icon: emailIcon, 
-      link: "mailto:aveenpattni@gmail.com"
-    },
-    {
-      icon: githubIcon, 
-      link: "https://github.com/aveenpattni"
-    }
-  ];
   return (
-    <HeroWrapper>
+    <HeroWrapper id="hero">
       <Particles {...particlesProps} />
       <HeroContent>
         <HeroName>Aveen Pattni</HeroName>
         <IconBubbles>
           {
-            iconList.map(item => <IconBubble key={item.icon} {...item} />)
+            contactList.map(item => <IconBubble key={item.icon} {...item} />)
           }
         </IconBubbles>
         <HeroTitle>
           <TitleItem>Software Developer</TitleItem>
           <TitleItem>Entrepreneur</TitleItem>
-          <TitleItem>Self-Proclaimed Athelete</TitleItem>
+          <TitleItem>Innovator</TitleItem>
         </HeroTitle>
         <HeroQuote>The limit does not exist.</HeroQuote>
       </HeroContent>

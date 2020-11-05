@@ -1,0 +1,110 @@
+$tabletWidth: 640px;
+$desktopWidth: 960px;
+$superDesktopWidth: 1140px;
+
+.header {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &__shell {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__name{
+    display: none;
+    color: black;
+    border: 1px solid black;
+    margin: 8px;
+    padding: 4px;
+    font-size: 2rem;
+    transition: 0.4s;
+  }
+  &__nav {
+    display: none;
+    list-style-type: none;
+    li {
+      font-weight: 500;
+      font-size: 1.25rem;
+      border-bottom: 2px solid white;
+      margin: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      :hover {
+        color: lightgray;
+      }
+    }
+  }
+  &__menu {
+    border: 2px solid white;
+    border-radius: 15%;
+    padding: 4px;
+    margin: 8px;
+    width: 35px;
+    height: 35px;
+    :hover {
+      cursor: pointer;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: white;
+    }
+  }
+  @media (min-width: $tabletWidth) {
+    &__nav {
+      display: flex;
+      justify-content: space-evenly;
+      
+    }
+    &__menu {
+      display: none;
+    }
+  }
+  @media (min-width: $desktopWidth) {
+  }
+  @media (min-width: $superDesktopWidth) {
+    &__name{
+      margin: 0;
+    }
+    &__nav{
+      li:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.isSticky {
+  background: #DFDFDF;
+  a {
+    color: black;
+  }
+  &__shell {
+    justify-content: space-between;
+  }
+  &__name {
+    display: block;
+  }
+  &__nav{
+    li {
+      border-bottom: 2px solid black;
+      :hover {
+        color: gray;
+      }
+    }
+  }
+  &__menu {
+    border: 2px solid black;
+    svg {
+      fill: black;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import units from "design-units";
-import { ContactBlock, ContentBlock } from "../../components/ContactBlock";
+import { ContactBlock } from "../../components/ContactBlock";
 import { contactList } from "./contacts";
 
 const ContactWrapper = styled.section`
@@ -44,7 +44,7 @@ const BlockSection = styled.div`
 
 export const ContactSection = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <ContentWrapper>
         <ContactHeader>Contact Aveen</ContactHeader>
         <BlockSection>

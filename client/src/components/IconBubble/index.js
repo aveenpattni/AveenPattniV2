@@ -30,10 +30,10 @@ const IconBubbleWrapper = styled.a`
   }
 `;
 
-export const IconBubble = ({icon, link}) => {
+export const IconBubble = ({icon, link, name}) => {
   return (
     <IconBubbleWrapper href={link} target="__blank">
-      <img src={icon} />
+      <img src={icon} alt={name} />
     </IconBubbleWrapper>
   )
 }

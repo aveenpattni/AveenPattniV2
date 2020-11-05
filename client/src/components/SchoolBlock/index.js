@@ -21,7 +21,7 @@ export const SchoolBlock = (props) => {
           {props.date? <SchoolDate>{props.date}</SchoolDate> : null}
         </TextZone>
         <ImageZone>
-          <img src={props.pic} />
+          <img src={props.pic} alt={props.school}/>
         </ImageZone>
       </SchoolInfo>
       { props.desc && isOpen ? <SchoolDescription>{props.desc}</SchoolDescription> : null}
