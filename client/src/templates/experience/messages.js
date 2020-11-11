@@ -1,18 +1,6 @@
 const messages = {
   experiences: [
     {
-      company: "Freshly Groomed",
-      titleDate: "CEO and Founder - (October 2020 - Present)",
-      pic: "/freshlygroomed.png",
-      description: [
-        "Founder of Freshly Groomed, an E-commerce buisiness selling male grooming products.",
-        "Launched Shopify store with custom designs and custom CSS.",
-        "Work with multiple suppliers to manufacture products with quality and deliver in a timely manner.",
-        "Manage shipping and logistics team to ensure customers are receiving their orders with quality care and attention to detail.",
-        "Manage customer service team to provide custimers support as they need, including general inquiries, issues with orders, order tracking, etc."
-      ]
-    },
-    {
       company: "Walmart Labs",
       titleDate: "Software Developer - Marketing Technology (July 2020 - Present)",
       pic: "/walmartlabs.png",
@@ -48,7 +36,19 @@ const messages = {
         "Created various business documents for multiple clients, as well as internal procedure documentation."
       ]
     }
-  ]
+  ],
+  entrepreneur: {
+    company: "Freshly Groomed",
+    titleDate: "CEO and Founder - (October 2020 - Present)",
+    pic: "/freshlygroomed.png",
+    description: [
+      "Founder of Freshly Groomed, an E-commerce buisiness selling male grooming products.",
+      "Launched Shopify store with custom designs and custom CSS.",
+      "Work with multiple suppliers to manufacture products with quality and deliver in a timely manner.",
+      "Manage shipping and logistics team to ensure customers are receiving their orders with quality care and attention to detail.",
+      "Manage customer service team to provide custimers support as they need, including general inquiries, issues with orders, order tracking, etc."
+    ]
+  },
 }
 
 export default messages;

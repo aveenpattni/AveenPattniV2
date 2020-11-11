@@ -23,6 +23,7 @@ export const AboutSection = () => {
           <AboutHeader>About Aveen</AboutHeader>
           <AboutText>{messages.aboutP1}</AboutText>
           <AboutText>{messages.aboutP2}</AboutText>
+          <AboutText>{messages.aboutP3}</AboutText>
           <SkillHeader>Skills</SkillHeader>
           <SkillZone>{messages.skills}</SkillZone>
         </TextZone>
