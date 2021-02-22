@@ -31,13 +31,23 @@ const ExpHeader = styled.h2`
     color: "whiteText"
   })}
 `;
+const ExpSubHeader = styled.h4`
+  font-family: "Georgia";
+  ${units({
+    fontSize: "h4",
+    marginTop: [2, 3],
+    color: "whiteText"
+  })}
+`;
 
 export const ExperienceSection = () => {
   return (
     <ExperienceWrapper id="experienceSection">
       <ContentWrapper>
         <ExpHeader>Experience</ExpHeader>
-        {messages.experiences.map(exp => <DropBlock key={Math.random()} {...exp}/>)}
+        {messages.experiences.map((exp, i) => <DropBlock key={i} {...exp}/>)}
+        <ExpSubHeader>Entrepreneurship</ExpSubHeader>
+        <DropBlock {...messages.entrepreneur} />
       </ContentWrapper>
     </ExperienceWrapper>
   )
